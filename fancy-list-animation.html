@@ -1,0 +1,19 @@
+---
+title: Fancy list animation
+layout: main
+task: 2
+permalink: f-l-a
+list: ['Home', 'Products', 'Services', 'Office', 'Contacts', 'About us', 'Basket']
+icons : ['home', 'network-wired', 'concierge-bell', 'building', 'edit', 'user', 'shopping-cart
+']
+---
+
+<h2 class="fullWidth">{{page.title}}</h2>
+
+<article class="task2">
+    <ul>
+        {% for item in page.list %}
+            <li class="task2-item"><a href="#"><i class="fas fa-{{page.icons[forloop.index0]}}"></i> {{item}}</a></li>
+        {% endfor %}
+    </ul>
+</article>

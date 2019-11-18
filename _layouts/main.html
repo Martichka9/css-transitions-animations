@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS TRANSITIONS AND ANIMATIONS</title>
+    <link rel="stylesheet" href="{{site.baseurl}}/styles/style.css">
+    <!-- <link rel="stylesheet" href="{{site.baseurl}}/styles/fa/css/solid.min.css">
+    <link rel="stylesheet" href="{{site.baseurl}}/styles/fa/css/fontawesome.min.css"> -->
+</head>
+<body>
+    {% include header.html %}
+    <main class="main-container">
+        <section class="task-container">
+            {{ content }}
+        </section>
+    </main>
+    {% include footer.html %}
+    <script>
+    window.addEventListener('load', function() {
+        document.body.classList = "loaded";
+    });
+    </script>
+</body>
+</html>

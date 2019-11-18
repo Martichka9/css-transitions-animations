@@ -1,0 +1,13 @@
+<header>
+    <h1>Transitions & Animations</h1>
+    <nav>
+        <ul>
+            {% assign orderedPages = site.pages | sort: 'task' %}
+            {% for page in orderedPages %}
+                {% if page.title %}
+                    <li><a href="{{site.baseurl}}/{{page.permalink}}">{{page.title}}</a></li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </nav>
+</header>
