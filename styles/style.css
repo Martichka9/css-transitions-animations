@@ -110,3 +110,55 @@ header nav ul li a:hover {
 .task2-item a {
     font-weight: bold;
 }
+
+/*TASK 3 Styles*/
+.task3, .task3:before, .task3:after {
+    width: 800px;
+    height: 450px;
+}
+    
+.task3:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#5c6f89+0,c0d5e5+100 */
+    background: -moz-linear-gradient(top,  #5c6f89 0%, #c0d5e5 100%); /* FF3.6-15 */
+    background: linear-gradient(to bottom,  #5c6f89 0%,#c0d5e5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+.task3:after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#5c6f89+0,c0d5e5+100 */
+    background: -moz-linear-gradient(top,  #e6b104 0%, #e5dbc0 100%); /* FF3.6-15 */
+    background: linear-gradient(to bottom,  #e6b104 0%,#e5dbc0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.task3:hover:after {
+    opacity: 1;
+}
+
+/*Task 4 Styles*/
+.task4 {
+    width: 450px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 150px 200px;
+    gap: 15px;
+}
+.task4 a {
+    text-align: center;
+    text-transform: uppercase;
+    color: #243ba0;
+    font-weight: bold;
+    padding: 10px;
+    border: 5px solid;
+    box-shadow: 0 0 0 0px #243ba0;
+    transition: box-shadow 0.5s linear;
+}
+
+.task4 a:hover {
+    box-shadow: 0 0 0 5px #243ba0;
+}
