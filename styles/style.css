@@ -18,6 +18,9 @@ a{
     color: inherit;
 }
 
+body{
+    background-color: #e4e4f7;
+}
 
 header, header nav, header nav ul, .main-container .task-container {
     display: flex;
@@ -26,20 +29,26 @@ header, header nav, header nav ul, .main-container .task-container {
     flex-wrap: wrap;
 }
 
-header, nav {
-    height: 80px;
+header, nav, header nav ul {
+    min-height: 80px;
 }
 header h1, header nav {
     margin: 0 20px;
 }
 
+header nav ul li{
+    margin: 1em 0.5em;
+}
+
 header nav ul li a {
     padding: 7px;
+    border: 2px solid #5c6f89;
+    font-weight: 900;
 }
 
 header nav ul li a:hover {
-    transform: scale(1.3);
-    font-weight: 900;
+    background-color: #5c6f89;
+    color: #fff;
 }
 
 .fullWidth {
@@ -54,7 +63,6 @@ header nav ul li a:hover {
 .main-container .task-container {
     width: 80%;
     height: 32vh;
-    box-shadow: 1px 1px 1px 1px #fff;
     margin: 0 auto;
 }
 
@@ -151,6 +159,7 @@ header nav ul li a:hover {
 .task4 a {
     text-align: center;
     text-transform: uppercase;
+    background-color: #fff;
     color: #243ba0;
     font-weight: bold;
     padding: 10px;
