@@ -70,6 +70,10 @@ header nav ul li a:hover {
     margin: var(--taskMargin);
 }
 
+footer p {
+    text-align: center;
+}
+
 /*TASK 1 Style*/
 .task1 {
     width: 100px;
